@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Localstorage</title>
+</head>
+<body>
+
+    <div class="main">
+        <h1>LocalStorage Form </h1>
+
+    <form onsubmit="saveName(); return false"; >
+        <input id="name" type="name" placeholder="name"> <br>
+        <input id="father" type="name" placeholder="father name"> <br>
+        <input id="Email" type="email" placeholder="Email"><br>
+        <input id="phone" type="number" placeholder="phone"><br>
+        <input id="CNIC" type="number" placeholder="CNIC"><br>
+        <input id="Date" type="date" placeholder="Date of birth"><br>
+        <input id="Address" type="text" placeholder="Address"><br>
+        <input class="img" id="image" type="file" accept="image/*" placeholder="Upload Image"><br>
+        <input class="btn" onclick="submit()" type="submit">
+    </form>
+
+    <button class="generate" onclick="generate()"> generate</button>
+
+    <div id="root"></div>
+
+</div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
